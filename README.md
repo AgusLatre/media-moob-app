@@ -29,12 +29,11 @@ Este proyecto permite simular el envio de mensajes a múltiples plataformas (Tel
     ```
 
 3.  **Definir variables de entorno:**
-    Copy the `.env.example` file to `.env` and configure your database connection and any other necessary environment variables.
+    Copia el  `.env.example` a tu `.env` y configura las variables de entorno.
 
     ```bash
     cp .env.example .env
     ```
-    Then, open `.env` in your text editor and update the `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` variables as needed.
 
 4.  **Gerar la key de la aplicación:**
 
