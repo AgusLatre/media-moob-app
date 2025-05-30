@@ -58,7 +58,7 @@ Este proyecto permite simular el envio de mensajes a múltiples plataformas (Tel
     ```bash
     php artisan serve
     ```
-    This will typically start the application at `http://127.0.0.1:8000`.
+    Tipicamente se iniciará en `http://127.0.0.1:8000`.
 
 8.  **Instalar dependencias de Node.js y compilar assets:**
 
@@ -66,7 +66,7 @@ Este proyecto permite simular el envio de mensajes a múltiples plataformas (Tel
     npm install
     npm run dev
     ```
-    Or, for production-ready assets:
+    O, para prod:
     ```bash
     npm run build
     ```
