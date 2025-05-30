@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/api/messages', [MessageController::class, 'store']);
+Route::post('/messages', [MessageController::class, 'store']);

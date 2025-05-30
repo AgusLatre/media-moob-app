@@ -38,7 +38,18 @@ class MessageController extends Controller
             ->make($request->platform)
             ->sendMessage($message);
 
-        Log::info('Message sent', ['user' => auth()->id(), 'platform' => $request->platform]);
+        Log::info('Message sent', [
+            'user' => auth()->id(),
+            'platform' => $request->platform
+        ]);
+
+        if ($request->wantsJson()) {
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Message sent successfully.',
+                'data' => $message
+            ], 201);
+        }
 
         return redirect()->route('messages.index')->with('success', 'Message sent!');
     }
